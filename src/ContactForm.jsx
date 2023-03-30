@@ -27,14 +27,10 @@ const ContactForm = () => {
 
   return (
     <section className="">
-      <div className="m-32 p-9">
+      <div className="">
         <h2 className="title-text"> Contact Us</h2>
       </div>
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="p-10 mb-10 rounded-lg bg-gray-200 shadow-lg flex flex-col justify-center items-center"
-      >
+      <form ref={form} onSubmit={sendEmail} className="">
         <div>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" required />

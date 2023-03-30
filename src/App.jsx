@@ -1,11 +1,15 @@
 import ContactForm from "./ContactForm";
+import { createRoot } from "react-dom/client";
+import React from "react";
 
 const App = () => {
   return (
-    <div className="p-3 m-40">
+    <div className="names">
       <ContactForm />
     </div>
   );
 };
 
-export default App;
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
