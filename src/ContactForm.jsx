@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import paper_plane from ".images/plane.png";
 
 const ContactForm = () => {
   const form = useRef();
@@ -26,24 +27,54 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="">
-      <div className="">
-        <h2 className="title-text"> Contact Us</h2>
-      </div>
-      <form ref={form} onSubmit={sendEmail} className="">
-        <div>
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" required />
+    <section className="flex justify-center ">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-col box-content h-96 w-70 p-2 rounded-lg border-2 border-black"
+      >
+        <div className="">
+          <h2 className="p-6 text-center text-xl"> Get in touch</h2>
+          <img className="img-fluid d-flex" src={paper_plane} alt="plane"></img>
         </div>
         <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" required />
+          <label className="" htmlFor="name">
+            {" "}
+          </label>
+          <input
+            placeholder="name"
+            className=" bg-my-white mb-6 block w-72 border-0 border-b-2 border-my-teal
+            focus:ring-0 focus:border-black rounded-md"
+            type="text"
+            name="name"
+            required
+          />
         </div>
         <div>
-          <label htmlFor="message">Message</label>
-          <textarea name="message" required />
+          <label htmlFor="email"> </label>
+          <input
+            placeholder="email"
+            className="bg-my-white mb-6 block w-72 border-0 border-b-2 border-my-teal
+            focus:ring-0 focus:border-black rounded-md"
+            type="email"
+            name="email"
+            required
+          />
         </div>
-        <button className="btn-form" type="submit">
+        <div>
+          <label htmlFor="message"> </label>
+          <textarea
+            placeholder="message"
+            className=" bg-my-white mb-6 block w-72 border-0 border-b-2 border-my-teal
+            focus:ring-0 focus:border-black rounded-md"
+            name="message"
+            required
+          />
+        </div>
+        <button
+          className="btn-form hover:bg-my-teal font-bold py-2  rounded border-2 border-black "
+          type="submit"
+        >
           Send Message
         </button>
       </form>

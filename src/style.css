@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Color Theme Swatches in Hex */
+.light_teal {
+  color: #86a69d;
+}
+.light_orange {
+  color: #f2b263;
+}
+.light_white {
+  color: #f2e8df;
+}
+.light_pink {
+  color: #f2c6c2;
+}
+.reg_pink {
+  color: #f28585;
+}
