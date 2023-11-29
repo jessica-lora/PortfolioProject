@@ -1,5 +1,5 @@
 {
-  "homepage": "http://jessica-lora.github.io/PortfolioProject",
+  "homepage": "http://jessica-lora.github.io/PortfolioProject/",
   "name": "portfolioproject",
   "version": "1.0.0",
   "description": "",
@@ -7,9 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
