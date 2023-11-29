@@ -4,10 +4,8 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="p-0 m-0 bg-my-white">
-      <header className="w-full mb-10 text-center p-7 text-2xl">
-        Portfolio
-      </header>
+    <div className="p-0 m-0 bg-my-pink rounded border-2">
+      <header className="w-full text-center p-7 text-2xl">Portfolio</header>
       <div className="">
         <ContactForm />
       </div>

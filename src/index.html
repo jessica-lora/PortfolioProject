@@ -1,16 +1,177 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Adopt Me</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" type="text/css" href="TextSphere.css" />
+
+    <!--- fullpage stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css"
+      integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--- rexicon link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--- Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <div id="root">not rendered</div>
-    <script type="module" src="./App.jsx"></script>
+  <body class="body" id="mainbody">
+    <!---header-->
+    <header>
+      <a href="#" class="logo">Software <span>Developer</span></a>
+
+      <ul class="navlist">
+        <li><a href="#page1">Home</a></li>
+        <li><a href="#page2">About</a></li>
+        <li><a href="#page3">Skills</a></li>
+        <li><a href="#page4">Projects</a></li>
+      </ul>
+
+
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn" class="h-btn">Contact Me</button>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="root">not rendered</div>
+          <script type="module" src="./App.jsx"></script>
+        </div>
+      </div>
+    </header>
+
+    <div id="fullpage">
+      <div class="section fp-noscroll" data-anchor="page1" id="hero">
+          <div class="main-content">
+            <h4>Hello, I'm</h4>
+            <h1><span class="input"></span></h1>
+            <p></p>
+            <div class="social">
+              <a href="https://github.com/jessica-lora" target="_blank"><i class="ri-github-fill"></i></a>
+              <a href="https://gitlab.com/jalora428" target="_blank"><i class="ri-gitlab-fill"></i></a>
+              <a href="https://www.linkedin.com/in/jessica-lora428/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+              <a href="https://www.instagram.com/jessica.lora.33/" target="_blank"><i class="ri-instagram-fill"></i></a>
+            </div>
+
+            <div class="main-btnn">
+              <button id="myBtn2" class="btn">Hire Me</button>
+              <!-- <a href="#" class="btn">Hire me</a> -->
+              <a href="./Jessica Lora Resume.pdf" target="_blank" class="btn btn2">Download Resume</a>
+            </div>
+          </div>
+
+          <!-- <div class="bottom">
+                <p>Copyright © 2023 - Made by Jessica Lora</p>
+            </div>  -->
+      </div>
+
+      <div class="section fp-noscroll" data-anchor="page2" id="about">
+          <div class="about-content">
+            <div class="row">
+              <div class="column">
+                <h4>A little bit about me...</h4>
+            <p>
+              I am a highly enthusiastic and inquisitive emerging software
+              engineer with over 5 years of experience in the biomedical
+              industry. My current experience of backend technologies such as
+              Python, Django, FastAPI, and Postgres, and frontend technologies
+              like React and JavaScript have enabled me to design, build and
+              deploy functional web applications. I have a background in both
+              lab and clinical research providing me unique insight of the
+              scientific process from bench to bedside. I worked with teams to
+              perform data modeling and have utilized several medical research
+              web applications. 
+            </p>
+              </div>
+              <div class="column">
+                <img src="me2.jpeg" alt="pet" class="align-right">
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="section fp-noscroll" data-anchor="page3" id="skills">
+          <div class="skills-content">
+            <h4>Skills</h4>
+            <div id="root1">not rendered</div>
+            <script type="module" src="./TextSphere.jsx"></script>
+          </div>
+      </div>
+
+      <div class="section fp-noscroll" data-anchor="page4" id="projects">
+          <div class="slide" id="slide1">
+                <h1>AdoptMe</h1>
+                <h4>
+                  True love is a hop, skip, and a click away! 
+                  <br>
+                  Adopt a forever friend today!
+                  <br>
+                  <br>
+                  <a href="https://github.com/jessica-lora/AdoptMe_Django_React" class="projectBtn" target="_blank">Project</a>
+                </h4>
+                  <!-- <img src="petimage.jpg" alt="pet" class="petimage"> -->
+          </div>
+          <div class="slide" id="slide2">
+            <h1>Carventory</h1>
+            <h4>Searching for your dream car? Need repairs? 
+              <br>
+              We've got you covered!
+              <br>
+              <br>
+              <a href="https://gitlab.com/DoronioF/carventory" class="projectBtn" target="_blank">Project</a>
+            </h4>
+          </div>
+          <div class="slide" id="slide3">
+            <h1>Paper Stonks</h1>
+            <h4>Want to learn how to trade stocks? 
+              <br>
+              Feel all the rush with none of the risks!
+              <br>
+              <br>
+              <a href="https://gitlab.com/apex-legends1/paper-stonks" class="projectBtn" target="_blank">Project</a>
+            </h4>
+          </div>
+      </div>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--- fullpage.js --->
+    <!-- <script src="vendors/easings.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--- js link-->
+    <script src="script.js"></script>
+
+    <!-- React scripts  -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
   </body>
 </html>
