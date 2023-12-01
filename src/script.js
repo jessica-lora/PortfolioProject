@@ -1,4 +1,5 @@
 import ScrollReveal from "scrollreveal";
+import fullpage from "fullpage.js";
 
 const sr = ScrollReveal({
   distance: "35px",
