@@ -1,3 +1,5 @@
+import ScrollReveal from "scrollreveal";
+
 const sr = ScrollReveal({
   distance: "35px",
   duration: 2400,
