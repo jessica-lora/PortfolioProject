@@ -74,6 +74,7 @@ span.onclick = function () {
   modal.style.display = "none";
   document.body.style.overflow = "auto"; // ADD THIS LINE
   document.body.style.height = "auto"; // ADD THIS LINE
+  window.location.reload();
 };
 
 // When the user clicks anywhere outside of the modal, close it
@@ -82,5 +83,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
     document.body.style.overflow = "auto"; // ADD THIS LINE
     document.body.style.height = "auto"; // ADD THIS LINE
+    window.location.reload();
   }
 };
